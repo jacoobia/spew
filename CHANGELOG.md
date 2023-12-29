@@ -6,19 +6,19 @@
 
 - 6b7de5f: renamed to tspew for template-spew
 
-## 0.3.0
+## 0.0.3
 
 ### Minor Changes
 
 - cd8ab20: Fixed publish workflow
 
-## 0.2.0
+## 0.0.2
 
 ### Minor Changes
 
 - 6041aba: Added release workflow & license
 
-## 0.1.0
+## 0.0.1
 
 ### Minor Changes
 
