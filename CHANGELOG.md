@@ -1,5 +1,11 @@
 # spew
 
+## 1.1.1
+
+### Patch Changes
+
+- 58b7745: Updated readme
+
 ## 1.1.0
 
 ### Minor Changes
