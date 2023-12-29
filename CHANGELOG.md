@@ -1,5 +1,11 @@
 # spew
 
+## 1.1.0
+
+### Minor Changes
+
+- 6e8b34a: changed to used fg and bg hex instead of predefined colours
+
 ## 1.0.2
 
 ### Patch Changes
