@@ -1,5 +1,11 @@
 # spew
 
+## 1.0.1
+
+### Patch Changes
+
+- 1d99669: types fix
+
 ## 1.0.0
 
 ### Major Changes
