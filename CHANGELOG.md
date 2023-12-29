@@ -1,5 +1,11 @@
 # spew
 
+## 0.3.0
+
+### Minor Changes
+
+- cd8ab20: Fixed publish workflow
+
 ## 0.2.0
 
 ### Minor Changes
