@@ -1,5 +1,11 @@
 # spew
 
+## 0.1.0
+
+### Minor Changes
+
+- 6b7de5f: renamed to tspew for template-spew
+
 ## 0.3.0
 
 ### Minor Changes
