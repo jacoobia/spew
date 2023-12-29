@@ -134,3 +134,4 @@ const printTemplate = async (options?: PrintOptions): Promise<void> => {
 };
 
 export default printTemplate;
+export * from './@types/index';
