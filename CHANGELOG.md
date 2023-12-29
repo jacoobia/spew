@@ -1,5 +1,11 @@
 # spew
 
+## 1.0.0
+
+### Major Changes
+
+- cdc59fb: updated readme, first proper release
+
 ## 0.1.0
 
 ### Minor Changes
