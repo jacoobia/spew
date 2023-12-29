@@ -1,5 +1,11 @@
 # spew
 
+## 1.0.2
+
+### Patch Changes
+
+- 7c83c43: exported missing type
+
 ## 1.0.1
 
 ### Patch Changes
