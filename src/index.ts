@@ -7,7 +7,7 @@ import { PrintOptions, RGB, Replacer } from './@types';
 const templateFileName: string = 'template';
 const shorthandHexColorRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
 const standardHexColorRegex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;
-const hexReplacerRegex = /%hex\[([0-9A-Fa-f]{6})\]/g;
+const hexReplacerRegex = /%(fg|bg)Hex\[([0-9A-Fa-f]{6})\]/g;
 
 /**
  * Uses regex to find and convert hex shorthand and longhand to RGB values
@@ -62,10 +62,10 @@ const extractHexReplacers = (line: string): Replacer[] => {
   const replacers = [];
 
   while ((matches = hexReplacerRegex.exec(line)) !== null) {
-    const ansiCode = hexToAnsi(matches[1]);
+    const ansiCode = hexToAnsi(matches[2]);
     const replacer = {
       target: matches[0],
-      replacer: `\x1b[38;5;${ansiCode}m`
+      replacer: `\x1b[${matches[0].includes('fgHex') ? '3' : '4'}8;5;${ansiCode}m`
     };
     replacers.push(replacer);
   }
