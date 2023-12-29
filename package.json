@@ -1,6 +1,6 @@
 {
   "name": "spew",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple template printer for the JavaScript console",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
