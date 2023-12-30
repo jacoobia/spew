@@ -4,13 +4,41 @@
 
 A simple template printer for the JavaScript console.
 
-### Install
+## Install
 
 ```
 npm install tspew
 ```
 
-### Example Usage
+## Options
+
+| Name              | Description                                                                                                | Type       |
+| ----------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
+| resetEachLine     | Automatically appends a reset to the end of each line of your template                                     | boolean    |
+| customerReplacers | An array of the Replacer type provided to add your own token replacers to the template                     | Replacer[] |
+| typeEffect        | Enables the type effect, if you don't want this then just omit this option rather than setting it to false | boolean    |
+| charDelay         | Couples with typeEffect and applys a delay in ms between each character being displayed                    | number     |
+| lineDelay         | Adds a delay in ms between each line being printed to the console                                          | number     |
+
+## Default Supplied Tokens
+
+| Token       | Replacer  |
+| ----------- | --------- |
+| %reset      | `\x1b[0m` |
+| %bright     | `\x1b[1m` |
+| %dim        | `\x1b[2m` |
+| %underscore | `\x1b[4m` |
+| %reverse    | `\x1b[7m` |
+| %tick       | `\u2713`  |
+| %heavyTick  | `\u2714`  |
+| %cross      | `\u2717`  |
+| %heavyCross | `\u2718`  |
+
+### Preview
+
+![defaults](./.github/defaults.png)
+
+## Example Usage
 
 Create a `template` file in the root of your project
 

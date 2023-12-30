@@ -64,7 +64,7 @@ const extractHexReplacers = (line: string): Replacer[] => {
   while ((matches = hexReplacerRegex.exec(line)) !== null) {
     const ansiCode = hexToAnsi(matches[2]);
     const replacer = {
-      target: matches[0],
+      token: matches[0],
       replacer: `\x1b[${matches[0].includes('fgHex') ? '3' : '4'}8;5;${ansiCode}m`
     };
     replacers.push(replacer);
@@ -87,7 +87,7 @@ const replaceTokens = (line: string, options?: PrintOptions): string => {
   ];
 
   dynamicReplacers.forEach((replacer: Replacer) => {
-    line = line.replaceAll(replacer.target, replacer.replacer);
+    line = line.replaceAll(replacer.token, replacer.replacer);
   });
 
   return `${line}${options?.resetEachLine || ''}`;

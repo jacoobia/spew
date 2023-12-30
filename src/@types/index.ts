@@ -12,6 +12,7 @@ type TypeEffectOptions = BasePrintOptions & {
 type NoTypeEffectOptions = BasePrintOptions & {
   typeEffect?: false | undefined;
   lineDelay?: number;
+  charDelay?: never;
 };
 
 export type RGB = {
@@ -21,7 +22,7 @@ export type RGB = {
 };
 
 export type Replacer = {
-  target: string;
+  token: string;
   replacer: string;
 };
 
