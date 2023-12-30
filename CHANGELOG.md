@@ -1,5 +1,11 @@
 # spew
 
+## 1.1.2
+
+### Patch Changes
+
+- 2197711: Renamed tokens and updated readme
+
 ## 1.1.1
 
 ### Patch Changes
